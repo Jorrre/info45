@@ -1,4 +1,4 @@
-# Infoskjerm for Odd Brochmanns veg 45 Berg studentby generelt
+# Infoskjerm for Odd Brochmanns veg 45
 
 ##### eller Berg studentby generelt
 
