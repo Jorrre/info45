@@ -32,8 +32,8 @@ function BusDepartures() {
   }, [refresh]);
 
   useEffect(() => {
-    const uphillID = "NSR:Quay:74952"; // Towards Gløshaugen/Lerkendal
-    const downhillID = "NSR:Quay:74954"; // Towards Moholt/Strindheim
+    const uphillID = "NSR:Quay:74952"; // Towards Moholt/Strindheim
+    const downhillID = "NSR:Quay:74954"; // Towards Gløshaugen/Lerkendal
 
     setUphill(departures.filter((departure) => departure.quay.id === uphillID));
     setDownhill(
@@ -54,7 +54,7 @@ function BusDepartures() {
 function DepartureTable(props) {
   const { departures } = props;
   return (
-    <table className="departureTable">
+    <table className="busDepartureTable">
       <tr>
         <th>Linje</th>
         <th>Destinasjon</th>
@@ -77,7 +77,7 @@ function DepartureTableRow(props) {
   const departureTime = formatDepartureTime(departure.expectedDepartureTime);
 
   return (
-    <tr className="departureTableRow">
+    <tr className="busDepartureTableRow">
       <td>{line}</td>
       <td>{destination} </td>
       <td>{departureTime}</td>
