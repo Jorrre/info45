@@ -7,7 +7,7 @@ const service = createEnturService({
 });
 
 function BusDepartures() {
-  const [refresh, setRefresh] = useState(false);
+  const [refresh, setRefresh] = useState(true);
   const [departures, setDepartures] = useState([]);
   const [downHill, setDownhill] = useState([]);
   const [upHill, setUphill] = useState([]);
